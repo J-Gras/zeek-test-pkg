@@ -1,0 +1,18 @@
+[package]
+script_dir = scripts
+test_command = cd testing && btest -c btest.cfg
+summary = TODO: A summary of TestPkg in one line
+description = TODO: A more detailed description of TestPkg.
+	It can span multiple lines, with this indentation.
+depends = 
+	zeek >=4.0.0
+
+[template]
+source = https://github.com/zeek/package-template
+version = v2.0.0
+zkg_version = 2.12.0-13
+features = github-ci
+
+[template_vars]
+name = TestPkg
+
